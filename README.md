@@ -34,7 +34,7 @@ cd TRate
 
 make		
 
-In file Trate.sh edit path to TRate folder, e.g.
+In file TRate.sh edit path to TRate folder, e.g.
 
 FOLDER_PATH="your/path/TRate"
 
