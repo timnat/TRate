@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-FOLDER_PATH="/home/newnataliya/From_timnatuk/APPS/APPS_NT/TRate"
+FOLDER_PATH="/your/path/TRate"
 #Transcript_rate version 1
 
 # Bedtools should be installed in your Path!
