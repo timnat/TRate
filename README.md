@@ -26,6 +26,8 @@ Coverage_file format example
 	BEDTOOLS
 	AWK
     g++
+    bedops
+    gffread
 	
 ### Installation
 Download TRate
