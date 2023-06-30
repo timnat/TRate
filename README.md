@@ -1,5 +1,5 @@
 # _TRate_
-The _TRate_ program computes "rate" of each transcript according to given coverage file. Transcripts are coded by coordinates of their exons (bed file for now, gtf/gff in future). Rate is computed as total _mass_ of exons within the transcript divided by total _length_ of exons. _Mass_ is taken as approximation of the area under coverage curve, i.e. sum of areas of coverage rectangles, and length is computed as sum of lengths of bedgraph intervals within exons.
+The _TRate_ program computes "rate" of each transcript according to given coverage file. Transcripts are coded by coordinates of their exons (bed file for now, gtf/gff to exon bed file conversion scripts are available). Rate is computed as total _mass_ of exons within the transcript divided by total _length_ of exons. _Mass_ is taken as approximation of the area under coverage curve, i.e. sum of areas of coverage rectangles, and length is computed as sum of lengths of bedgraph intervals within exons.
 
 The _TRate_ program takes in two arguments in fixed order.
 
@@ -26,6 +26,8 @@ Coverage_file format example
 	BEDTOOLS
 	AWK
     g++
+    bedops
+    gffread
 	
 ### Installation
 Download TRate
@@ -51,6 +53,20 @@ Output format
      Transcript3	-1
 
 Transcript rate = -1 if no coverage data were found for this transcript.
+
+### Resources
+#### GFF/GTF file to exon bed conversion
+
+#### For gtf files
+
+     src/gtf2exon_bed.sh [gtf_file]
+
+#### For gff files
+
+     src/gff2exon_bed.sh [gtf_file]
+
+new files will be named as [gtf_file/gff_file]_exon.bed 
+
      
 
 
