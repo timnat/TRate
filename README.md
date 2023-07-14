@@ -1,5 +1,5 @@
 # _TRate_
-The _TRate_ program computes "rate" of each transcript according to given coverage file. Transcripts are coded by coordinates of their exons (bed file for now, gtf/gff in future). Rate is computed as total _mass_ of exons within the transcript divided by total _length_ of exons. _Mass_ is taken as approximation of the area under coverage curve, i.e. sum of areas of coverage rectangles, and length is computed as sum of lengths of bedgraph intervals within exons.
+The _TRate_ program computes "rate" of each transcript according to given coverage file. Transcripts are coded by coordinates of their exons (bed file for now, gtf/gff in future). Rate is computed as total _mass_ of exons within the transcript divided by total _length_ of exons. _Mass_ is taken as approximation of the area under coverage curve, i.e. sum of areas of coverage rectangles, and _length_ is computed as sum of lengths of bedgraph intervals within exons.
 
 The _TRate_ program takes in two arguments in fixed order.
 
