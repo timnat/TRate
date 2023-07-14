@@ -61,7 +61,7 @@ int main( int argc , char** argv ) {
         if(trans_pred != trans) 
          { 
           if(width_sum>0)  rate=area_sum/width_sum;
-          else rate=-1;
+          else rate=0;
               
           if(trans_pred!="") outfile << trans_pred << "\t" << rate << endl;   
 
@@ -78,7 +78,7 @@ int main( int argc , char** argv ) {
 
    //process last record
     if(width_sum>0)  rate=area_sum/width_sum;
-          else rate=-1;
+          else rate=0;
 
           outfile << trans_pred << "\t" << rate << endl;   
 
