@@ -48,9 +48,9 @@ Output format
 
      Transcript1	0.341895
      Transcript2	1.98961
-     Transcript3	-1
+     Transcript3	0
 
-Transcript rate = -1 if no coverage data were found for this transcript.
+Transcript rate = 0 if no coverage data were found for this transcript.
      
 
 
